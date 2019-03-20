@@ -7,7 +7,9 @@ public class vc1: UIViewController {
     
     open override func loadView() {
         
-        
+        let view = UIImageView()
+        //view.image = UIImage(named: "")
+        view.frame = self.view.bounds
     }
 }
 

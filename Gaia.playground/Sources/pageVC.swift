@@ -3,7 +3,7 @@ import UIKit
 
 public class pageVC: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
-    var pages: Array<UIViewController> = [vc1, vc2, vc3, vc4, vc5, vc6, vc7, vc8]
+    var pages: Array<UIViewController> = [vc1(), vc2(), vc3(), vc4(), vc5(), vc6(), vc7(), vc8()]
     let pageControl = UIPageControl()
     
     open override func loadView() {
@@ -19,5 +19,39 @@ public class pageVC: UIPageViewController, UIPageViewControllerDelegate, UIPageV
         self.pageControl.numberOfPages = self.pages.count
         self.pageControl.currentPage = initialPage
         self.view.addSubview(self.pageControl)
+    }
+    
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        
+        if let viewControllerIndex = self.pages.index(of: viewController) {
+            
+            if viewControllerIndex == 0 {
+                
+                return self.pages.last
+                
+            } else {
+    
+                return self.pages[viewControllerIndex - 1]
+            }
+        }
+        
+        return nil
+    }
+    
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        
+        if let viewControllerIndex = self.pages.index(of: viewController) {
+            
+            if viewControllerIndex < self.pages.count - 1 {
+                
+                return self.pages[viewControllerIndex + 1]
+                
+            } else {
+                
+                return self.pages.first
+            }
+        }
+        
+        return nil
     }
 }
