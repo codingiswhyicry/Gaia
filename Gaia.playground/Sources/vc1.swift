@@ -1,7 +1,13 @@
 import Foundation
 import UIKit
 
-class vc1: UIViewController {
+public class vc1: UIViewController {
     
+    //debris circling earth screen
+    
+    open override func loadView() {
+        
+        
+    }
 }
 

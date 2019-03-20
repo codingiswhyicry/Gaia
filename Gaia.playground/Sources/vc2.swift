@@ -1,6 +1,11 @@
 import Foundation
 import UIKit
 
-class vc2: UIViewController {
+public class vc2: UIViewController {
     
+    //satellite crashing screen
+    
+    open override func loadView() {
+        
+    }
 }

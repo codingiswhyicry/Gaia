@@ -1,6 +1,11 @@
 import Foundation
 import UIKit
 
-class vc9: UIViewController {
+public class vc9: UIViewController {
     
+    //behind the scenes drawings
+    
+    open override func loadView() {
+        
+    }
 }

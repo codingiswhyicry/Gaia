@@ -1,6 +1,11 @@
 import Foundation
 import UIKit
 
-class vc8: UIViewController {
+public class vc8: UIViewController {
     
+    //gaia circling the earth
+    
+    open override func loadView() {
+        
+    }
 }

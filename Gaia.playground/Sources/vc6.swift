@@ -1,6 +1,11 @@
 import Foundation
 import UIKit
 
-class vc6: UIViewController {
+public class vc6: UIViewController {
     
+    //debris being stored 
+    
+    open override func loadView() {
+        
+    }
 }

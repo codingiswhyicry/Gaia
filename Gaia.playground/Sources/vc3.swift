@@ -1,6 +1,11 @@
 import Foundation
 import UIKit
 
-class vc3: UIViewController {
+public class vc3: UIViewController {
     
+    //Gaia front intro screen
+    
+    open override func loadView() {
+        
+    }
 }

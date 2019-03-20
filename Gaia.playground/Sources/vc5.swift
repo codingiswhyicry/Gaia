@@ -1,6 +1,11 @@
 import Foundation
 import UIKit
 
-class vc5: UIViewController {
+public class vc5: UIViewController {
     
+    // debris cycle starting point
+    
+    open override func loadView() {
+        
+    }
 }
