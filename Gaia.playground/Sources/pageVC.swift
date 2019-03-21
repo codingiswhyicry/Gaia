@@ -21,6 +21,7 @@ public class pageVC: UIPageViewController, UIPageViewControllerDelegate, UIPageV
         self.view.addSubview(self.pageControl)
     }
     
+    //Page View Controller Stub #1
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         if let viewControllerIndex = self.pages.index(of: viewController) {
@@ -38,6 +39,7 @@ public class pageVC: UIPageViewController, UIPageViewControllerDelegate, UIPageV
         return nil
     }
     
+    //Page View Controller Stub #2
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         if let viewControllerIndex = self.pages.index(of: viewController) {
