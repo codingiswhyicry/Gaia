@@ -15,7 +15,7 @@ public class vc2: UIViewController {
         imageView.image = UIImage(named: "SKY-BACKGROUND.png")
         imageView.frame = self.view.bounds
         
-        crashView.frame = self.view.frame
+        crashView.frame = CGRect(x: 0, y: 0, width: 414, height: 736)
         crashView.image = crashImage
         imageView.addSubview(crashView)
         

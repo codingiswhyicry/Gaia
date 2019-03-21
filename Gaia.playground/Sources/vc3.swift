@@ -4,6 +4,10 @@ import UIKit
 public class vc3: UIViewController {
     
     //Gaia front intro screen
+    var gaiaImage = UIImage()
+    var gaiaImageView = UIImageView()
+    var exploreButton = UIButton()
+    
     open override func viewDidLoad() {
         
         let imageView = UIImageView()
