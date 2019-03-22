@@ -7,6 +7,8 @@ public class vc5: UIViewController {
     var debrisImageView = UIImageView()
     var debrisGif = UIImage()
     
+    var infoView = UIImageView()
+    
     open override func viewDidLoad() {
         
         debrisGif = UIImage.gifImageWithName("SATELLITE-PROCESSING")!
@@ -18,7 +20,11 @@ public class vc5: UIViewController {
         imageView.image = UIImage(named: "SKY-BACKGROUND.png")
         imageView.frame = self.view.bounds
         
+        infoView.frame = CGRect(x: 19, y: 503, width: 157, height: 109)
+        infoView.image = UIImage(named: "INFO-10")
+        
         view.addSubview(imageView)
         imageView.addSubview(debrisImageView)
+        imageView.addSubview(infoView)
     }
 }
