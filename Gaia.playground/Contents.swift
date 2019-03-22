@@ -5,7 +5,7 @@ import PlaygroundSupport
 
 var str = "Hello, playground"
 
-var initialView = vc6()
+var initialView = vc7()
 
 // Present the view controller in the Live View window
 
