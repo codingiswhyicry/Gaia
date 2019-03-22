@@ -5,6 +5,7 @@ public class vc2: UIViewController {
     
     let crashView = UIImageView()
     var crashImage = UIImage()
+    var crashInfo = UIImageView()
     
     //satellite crashing screen
     open override func viewDidLoad() {
@@ -19,8 +20,12 @@ public class vc2: UIViewController {
         crashView.image = crashImage
         imageView.addSubview(crashView)
         
+        crashInfo.frame = CGRect(x: 10, y: 10, width: 216, height: 101)
+        crashInfo.image = UIImage(named: "INFO-3")
+        
         view.addSubview(imageView)
         imageView.addSubview(crashView)
+        imageView.addSubview(crashInfo)
     }
     
     

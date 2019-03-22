@@ -7,6 +7,8 @@ public class vc1: UIViewController {
     let imageView = UIImageView()
     let earthView = UIImageView()
     let debrisField = UIImageView()
+    let infoView1 = UIImageView()
+    let infoView2 = UIImageView()
     
     open override func viewDidLoad() {
     
@@ -28,6 +30,14 @@ public class vc1: UIViewController {
         debrisField.frame = CGRect(x: 30, y: 151, width: 316, height: 344)
         imageView.addSubview(debrisField)
         imageView.bringSubviewToFront(debrisField)
+        
+        infoView1.frame = CGRect(x: 13, y: 67, width: 233, height: 69)
+        infoView1.image = UIImage(named: "INFO-1")
+        imageView.addSubview(infoView1)
+        
+        infoView2.frame = CGRect(x: 86, y: 519, width: 271, height: 125)
+        infoView2.image = UIImage(named: "INFO-2")
+        imageView.addSubview(infoView2)
         
         startAnimation()
         
