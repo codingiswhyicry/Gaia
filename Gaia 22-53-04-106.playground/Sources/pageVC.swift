@@ -21,7 +21,6 @@ public class pageVC: UIPageViewController, UIPageViewControllerDelegate, UIPageV
         return [vc1(), vc2(), vc3(), vc5(), vc6(), vc4(), vc7(), vc8()]
     }()
     
-    
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         guard let viewControllerIndex = orderedVC.index(of: viewController) else {

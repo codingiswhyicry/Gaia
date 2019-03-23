@@ -17,7 +17,7 @@ public class vc8: UIViewController {
     
     open override func viewDidLoad() {
         
-        pageControl.frame = CGRect(x: 79, y: 639, width: 160, height: 30)
+        pageControl.frame = CGRect(x: 108, y: 639, width: 160, height: 30)
         pageControl.image = UIImage(named: "PAGECONTROL-8")
         
         imageView.addSubview(pageControl)
@@ -42,7 +42,7 @@ public class vc8: UIViewController {
         gaia.orbit(view: gaia, center: earthView, radius: 135, time: 40.0, delay: 0.0)
         
         infoLabel.image = UIImage(named: "INFO-13")
-        infoLabel.frame = CGRect(x: 54, y: 499, width: 270, height: 95)
+        infoLabel.frame = CGRect(x: 54, y: 506, width: 270, height: 95)
         
         view.addSubview(imageView)
         imageView.addSubview(earthView)

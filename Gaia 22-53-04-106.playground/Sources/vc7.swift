@@ -14,7 +14,7 @@ public class vc7: UIViewController {
     
     open override func viewDidLoad() {
         
-        pageControl.frame = CGRect(x: 79, y: 639, width: 160, height: 30)
+        pageControl.frame = CGRect(x: 108, y: 639, width: 160, height: 30)
         pageControl.image = UIImage(named: "PAGECONTROL-7")
         
         imageView.addSubview(pageControl)
